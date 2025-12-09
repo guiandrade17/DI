@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Exemplo 39 - Bootstrap</title>
+</head>
+<body>
+<div class="container-sm">
+    <h1>Exemplo 39 Bootstrap - Container</h1>
+    <div class="alert alert-info" role="alert">
+        <h2>Bootstrap</h2>
+        <p>O Bootstrap é um framework front-end(html, css, javascript) muito popular entre os desenvolvedores de aplicações Web. Ele possui um kit de ferramentas que ajuda a construir a parte visual(front-end de sites e aplicações web.)</p>
+        <h2>Container</h2>
+        <p>Dentro do universo do Bootstrap, vamos ter vários seletores de classe, o container é um bloco de construção de layouts básicos e complexos. Sua principal finalidade é a de conter, centralizar e adicionar espaçamento lateral ao conteúdo do site. Esse seletor de classe possui largura fixa e centraliza o conteúdo no centro da tela.</p>
+        <p>Neste exemplo, estamos usando o seletor de classe do Bootstrap container.</p>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="alert alert-success" role="alert">
+        <h2>Container-fluid</h2>
+        <p>O seletor de classe container-fluid é semelhante ao primeiro "container", porém neste caso ele ocupará toda a tela, 100% da largura. Esse seletor de classe é muito utilizado em dashboards ou paineis administrativos. Neste exemplo estamos usando o seletor container-fluid, compare-o com o exemplo acima e observe suas principais diferenças.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aut quae obcaecati veritatis ad fugit iusto vel inventore iste. Cum a accusamus nisi quas adipisci perspiciatis odit. Iure, explicabo quae.</p>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
