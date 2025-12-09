@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 24 CSS</title>
+    <style>
+        body {
+            background-color: lightpink;
+        }
+
+        .div1 {
+            margin: 80px;
+            padding: 25px;
+            border: solid red 2px;
+            text-align: justify;
+            background-color: hsla(251, 61%, 80%, 0.8)
+        }
+
+        .div2 {
+            margin: 150px;
+            padding: 50px;
+            border: double greenyellow 2px;
+            text-align: justify;
+            background-color: hsl(141, 61%, 80%, 0.8)
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo 24 HTML CSS - Box Model</h1>
+
+    <div class="div1">
+        <h2>Box Model</h2>
+        <p>Em CSS, o termo "Box Model" ou "Modelo de Caixa" é usado quando se fala em design e layout web. O Box Model é
+            essencialmente uma caixa que envolve cada elemento HTML.</p>
+        <p>Cada caixa consiste em quatro partes: Conteúdo, Preenchimento, Bordas e Margens. Neste exemplo, podemos
+            visualizar de forma clara a representação do Box Model</p>
+        <div class="div2">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis incidunt illum similique libero
+                assumenda sapiente perferendis beatae ab sunt ex est necessitatibus, quod repellat ratione aliquam. Rem
+                doloremque deserunt nesciunt.</p>
+        </div>
+    </div>
+</body>
+</html>
