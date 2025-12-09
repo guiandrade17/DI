@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Cadastro de Funcionários" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Exemplo 45 - Bootstrap - Funcionários</title>
+
+    <style>
+        .painel {
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container-sm">
+        <div class="card mt-4 painel">
+            <div class="card-header bg-primary text-white">
+                Funcionários
+            </div>
+
+            <div class="card-body">
+                <div class="text-end mb-3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#modalFuncionario">
+                        Novo Funcionário
+                    </button>
+                </div>
+
+                <div>
+                    <h4>Funcionários Cadastrados</h4>
+                    <table class="table table-hover table-bordered border-dark text-center align-middle">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th scope="col">CPF</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Cargo</th>
+                                <th scope="col">Salário</th>
+                                <th scope="col">Data de Admissão</th>
+                                <th scope="col">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>123.456.789-00</td>
+                                <td>Guilherme Brito Andrade</td>
+                                <td>guilherme@empresa.com</td>
+                                <td>Desenvolvedor</td>
+                                <td>R$ 4.500,00</td>
+                                <td>10/01/2024</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>987.654.321-00</td>
+                                <td>Maria Oliveira</td>
+                                <td>maria@empresa.com</td>
+                                <td>Analista de Sistemas</td>
+                                <td>R$ 5.200,00</td>
+                                <td>15/03/2024</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>555.666.777-88</td>
+                                <td>Lucas Pereira</td>
+                                <td>lucas@empresa.com</td>
+                                <td>Estagiário</td>
+                                <td>R$ 1.800,00</td>
+                                <td>02/05/2024</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Excluir</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Novo Funcionário -->
+    <div class="modal fade painel" id="modalFuncionario" tabindex="-1" aria-labelledby="modalFuncionarioLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    Cadastro de Funcionário
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Digite o nome completo">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" id="cpf" class="form-control" placeholder="000.000.000-00">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" id="email" class="form-control" placeholder="exemplo@empresa.com">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label for="cargo" class="form-label">Cargo</label>
+                            <select id="cargo" class="form-select">
+                                <option selected disabled>Selecione...</option>
+                                <option>Gerente</option>
+                                <option>Analista</option>
+                                <option>Desenvolvedor</option>
+                                <option>Estagiário</option>
+                            </select>
+                        </div>
+
+                        <div class="col-3 mb-3">
+                            <label for="salario" class="form-label">Salário</label>
+                            <input type="number" id="salario" class="form-control" placeholder="R$">
+                        </div>
+
+                        <div class="col-3 mb-3">
+                            <label for="dataAdmissao" class="form-label">Data de Admissão</label>
+                            <input type="date" id="dataAdmissao" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Salvar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
