@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 44 - Bootstrap - Clientes</title>
+    <style>
+        .painel {
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            font-weight: bold;
+
+        }
+
+        .cor-cabecalho {}
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="card mt-4 painel">
+            <div class="card-header bg-primary text-white">
+                Clientes
+            </div>
+            <div class="card-body">
+                <div class="text-end">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Novo Cliente
+                    </button>
+                </div>
+                <div>
+                    <h4>Clientes Cadastrados</h4>
+                    <table class="table table-hover table-bordered border-dark">
+                        <thead class=bg-primary>
+                            <tr>
+                                <th scope="col">CPF</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Telefone</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>555.555.666-97</td>
+                                <td>Lara Maria</td>
+                                <td>lara@gmail.com</td>
+                                <td>61-9999 7070</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                            <tr>
+                                <td>555.555.666-97</td>
+                                <td>Lara Maria</td>
+                                <td>lara@gmail.com</td>
+                                <td>61-9999 7070</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                            <tr>
+                                <td>555.555.666-97</td>
+                                <td>Lara Maria</td>
+                                <td>lara@gmail.com</td>
+                                <td>61-9999 7070</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                            <tr>
+                                <td>555.555.666-97</td>
+                                <td>Lara Maria</td>
+                                <td>lara@gmail.com</td>
+                                <td>61-9999 7070</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                            <tr>
+                                <td>555.555.666-97</td>
+                                <td>Lara Maria</td>
+                                <td>lara@gmail.com</td>
+                                <td>61-9999 7070</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                            <tr>
+                                <td>555.555.666-97</td>
+                                <td>Lara Maria</td>
+                                <td>lara@gmail.com</td>
+                                <td>61-9999 7070</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>555.555.666-97</td>
+                                <td>Lara Maria</td>
+                                <td>lara@gmail.com</td>
+                                <td>61-9999 7070</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                            <tr>
+                                <td>555.555.666-97</td>
+                                <td>Lara Maria</td>
+                                <td>lara@gmail.com</td>
+                                <td>61-9999 7070</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade painel" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg ">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    Cadastro de Cliente
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label for="">Nome</label>
+                        <input type="text" name="" id="" class="form-control">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="">CPF/CNPJ</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="555.555.545-61">                          
+                        </div>
+                        <div class="col-6">
+                            <label for="">E-mail</label>
+                            <input type="email" name="" id="" class="form-control" placeholder="seuemail@gmail.com">                          
+                        </div>
+                        <div class="col-6">
+                            <label for="">Telefone</label>
+                            <input type="tel" name="" id="" class="form-control" placeholder="61-9999 7070">                          
+                        </div>
+                        <div class="col-6">
+                            <label for="">Endereço</label>
+                            <input type="text" name="" id="" class="form-control">                          
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Salvar</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
