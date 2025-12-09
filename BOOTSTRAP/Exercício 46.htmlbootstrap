@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Cadastro de Produtos" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Exemplo 46 - Bootstrap - Produtos</title>
+
+    <style>
+        .painel {
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container-sm">
+        <div class="card mt-4 painel">
+            <div class="card-header bg-primary text-white">
+                Produtos
+            </div>
+
+            <div class="card-body">
+                <div class="text-end mb-3">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto">
+                        Novo Produto
+                    </button>
+                </div>
+
+                <div>
+                    <h4>Produtos Cadastrados</h4>
+                    <table class="table table-hover table-bordered border-dark text-center align-middle">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th scope="col">Código</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Preço</th>
+                                <th scope="col">Estoque</th>
+                                <th scope="col">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Notebook Dell</td>
+                                <td>Informática</td>
+                                <td>R$ 4.500,00</td>
+                                <td>15 un</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Mouse Logitech</td>
+                                <td>Acessórios</td>
+                                <td>R$ 150,00</td>
+                                <td>40 un</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td>Teclado Mecânico</td>
+                                <td>Periféricos</td>
+                                <td>R$ 320,00</td>
+                                <td>25 un</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Excluir</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Novo Produto -->
+    <div class="modal fade painel" id="modalProduto" tabindex="-1" aria-labelledby="modalProdutoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    Cadastro de Produto
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nomeProduto" class="form-label">Nome do Produto</label>
+                        <input type="text" id="nomeProduto" class="form-control" placeholder="Digite o nome do produto">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label for="categoria" class="form-label">Categoria</label>
+                            <input type="text" id="categoria" class="form-control"
+                                placeholder="Ex: Informática, Periféricos">
+                        </div>
+                        <div class="col-3 mb-3">
+                            <label for="preco" class="form-label">Preço</label>
+                            <input type="number" id="preco" class="form-control" placeholder="R$">
+                        </div>
+                        <div class="col-3 mb-3">
+                            <label for="estoque" class="form-label">Estoque</label>
+                            <input type="number" id="estoque" class="form-control" placeholder="Qtd">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Salvar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
