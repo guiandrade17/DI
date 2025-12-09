@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 41 Bootstrap</title>
+    <style>
+        .painel {
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          font-weight: bold;
+          border-top: solid darkorange 6px;
+          padding: 25px;
+          margin: 20px;
+        }
+      </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="painel">
+            <h1>Exemplo 41 Bootstrap - Tabelas</h1>
+            <div class="alert alert-danger" role="alert">
+                <p>O Bootstrap oferece uma variedade de possibilidades para estilização de tabelas. Para utilizar o
+                    seletor basta adicionar o seletor de classe "table". </p>
+                <p>Para maiores informações sobre tabelas clique aqui: <a
+                        href="https://getbootstrap.com/docs/5.3/content/tables/#overview">Tabelas - Bootstrap</a></p>
+            </div>
+            <table class="table table-bordered table-hover">
+                <thead class="bg-info">
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Endereço</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JOSÉ DA SILVA</td>
+                        <td>QNL 01 BLOCO A</td>
+                        <td>jose@gmail.com</td>
+                        <td>61-3333 7070</td>
+                    </tr>
+                    <tr>
+                        <td>MARIA DA SILVA</td>
+                        <td>QNL 02 BLOCO B</td>
+                        <td>maria@gmail.com</td>
+                        <td>61-3333 7071</td>
+                    </tr>
+                    <tr>
+                        <td>ANTÔNIO DA SILVA</td>
+                        <td>QNL 03 BLOCO C</td>
+                        <td>antonio@gmail.com</td>
+                        <td>61-3333 7072</td>
+                    </tr>
+                    <tr>
+                        <td>LARA DA SILVA</td>
+                        <td>QNL 04 BLOCO D</td>
+                        <td>lara@gmail.com</td>
+                        <td>61-3333 7073</td>
+                    </tr>
+                    <tr>
+                        <td>RAFAEL DA SILVA</td>
+                        <td>QNL 05 BLOCO E</td>
+                        <td>rafael@gmail.com</td>
+                        <td>61-3333 7074</td>
+                    </tr>
+                    <tr>
+                        <td>REINALDO DA SILVA</td>
+                        <td>QNL 06 BLOCO F</td>
+                        <td>reinaldo@gmail.com</td>
+                        <td>61-3333 7075</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
