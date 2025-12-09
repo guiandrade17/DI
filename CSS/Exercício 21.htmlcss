@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 21 - Funcionário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <style>
+        .caixa {
+            font-weight: bold;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <h1>Exemplo 21 CSS HTML - Funcionário</h1>
+        <div class="card caixa">
+            <div class="card-header bg-primary text-white">
+                Cadastro de Funcionário
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Nome</label>
+                    <input type="text" class="form-control">
+                    <div class="row mt-2">
+                        <div class="col-6">
+                            <label for="">CPF</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="">E-mail</label>
+                            <input type="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-4">
+                            <label for="">Cargo</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-4">
+                            <label for="">Salário</label>
+                            <input type="number" step="0.001" class="form-control">
+                        </div>
+                        <div class="col-4">
+                            <label for="">Data de Admissão</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-3"><button type="button" class="btn btn-primary form-control">Salvar</button></div>
+                    <div class="col-3"><button type="button" class="btn btn-primary form-control">Pesquisar</button>
+                    </div>
+                    <div class="col-3"><button type="button" class="btn btn-primary form-control">Excluir</button></div>
+                    <div class="col-3"><button type="button" class="btn btn-primary form-control">Sair</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
