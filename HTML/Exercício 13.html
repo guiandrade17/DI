@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 13 HTML - Formulários</title>
+</head>
+<body>
+    <h1>Exemplo 13 HTML - Formulários</h1>
+    <h2>Formulário de Cadastro</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="cpf">CPF</label><br>
+            <input type="text" id="cpf" name="cpf"><br><br>
+
+            <label for="rg">RG</label><br>
+            <input type="text" id="rg" name="rg"><br><br>
+
+            <label for="nome">Digite o seu Nome</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label for="nascimento">Data de Nascimento</label><br>
+            <input type="date" id="nascimento" name="nascimento"><br><br>
+
+            <label>Sexo</label><br>
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label><br><br>
+
+            <label for="estado_civil">Estado Civil</label><br>
+            <select id="estado_civil" name="estado_civil">
+                <option value="solteiro">Solteiro</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="viuvo">Viúvo</option>
+            </select><br><br>
+
+            <input type="submit" value="Cadastrar">
+        </fieldset>
+    </form>
+</body>
+</html>
