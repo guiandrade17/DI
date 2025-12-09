@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Exemplo 43 - Bootstrap</title>
+<style>
+    .painel {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        font-weight: bold;
+        border-top: solid darkorange 6px;
+        padding: 25px;
+        margin: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="container-sm">
+    <div class="painel">
+        <h1>Exemplo 43 - Bootstrap Grid</h1>
+        <div>
+            <label for="">Nome</label>
+            <input type="text" name="" id="" class="form-control">
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label for="">Nome da Mãe</label>
+                <input type="text" name="" id="" class="form-control">
+            </div>
+            <div class="col-6">
+                <label for="">Nome do Pai</label>
+                <input type="text" name="" id="" class="form-control">
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="">Data Nascimento</label>
+                    <input type="date" name="" id="" class="form-control">
+                </div>
+                <div class="col-3">
+                    <label for="">Telefone</label>
+                    <input type="tel" name="" id="" class="form-control">
+                </div>
+                <div class="col-6">
+                    <label for="">Email</label>
+                    <input type="e-mail" name="" id="" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-3">
+                <button type="submit" class="btn btn-outline-info form-control">Salvar</button>
+            </div>
+            <div class="col-3">
+                <button type="submit" class="btn btn-outline-info form-control">Excluir</button>
+        </div>
+        <div class="col-3">
+            <button type="submit" class="btn btn-outline-info form-control">Pesquisar</button>
+    </div>
+    <div class="col-3">
+        <button type="submit" class="btn btn-outline-info form-control">Sair</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
