@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 42 - Bootstrap</title>
+    <style>
+        .painel {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            font-weight: bold;
+            border-top: solid darkorange 6px;
+            padding: 25px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="painel">
+            <h1>Exemplo 42 - Bootstrap - Componentes</h1>
+
+            <div>
+                <label for="">Nome</label>
+                <input type="text" name="" id="" class="form-control">
+            </div>
+            <div>
+                <label for="">Data de Nascimento</label>
+                <input type="date" name="" id="" class="form-control">
+            </div>
+            <div>
+                <label for="">E-mail</label>
+                <input type="e-mail" name="" id="" class="form-control">
+            </div>
+            <div>
+                <label for="">Preferências</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Front-End
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Back-End
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        FullStack
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Infraestrutura
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="">Estado Civil</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Selecione um estado civil</option>
+                    <option value="1">Casado</option>
+                    <option value="2">Solteiro</option>
+                    <option value="3">Tico-tico no fuba</option>
+                </select>
+            </div>
+            <h4>Clientes Cadastrados</h4>
+            <table class="table table-bordered table-hover">
+                <thead class="bg-info">
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Endereço</th>
+                        <th scope="col">e-mail</th>
+                        <th scope="col">Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JOSE DA SILVA</td>
+                        <td>QNL 01 BLOCO F</td>
+                        <td>jose@gmail.com</td>
+                        <td>61-3333 7070</td>
+                    </tr>
+                    <tr>
+                        <td>MARIA DA SILVA</td>
+                        <td>QNL 01 BLOCO F</td>
+                        <td>jose@gmail.com</td>
+                        <td>61-3333 7070</td>
+                    </tr>
+                    <tr>
+                        <td>ANTONIO DA SILVA</td>
+                        <td>QNL 01 BLOCO F</td>
+                        <td>jose@gmail.com</td>
+                        <td>61-3333 7070</td>
+                    </tr>
+                    <tr>
+                        <td>LARA DA SILVA</td>
+                        <td>QNL 01 BLOCO F</td>
+                        <td>jose@gmail.com</td>
+                        <td>61-3333 7070</td>
+                    </tr>
+                    <tr>
+                        <td>RAFAEL DA SILVA</td>
+                        <td>QNL 01 BLOCO F</td>
+                        <td>jose@gmail.com</td>
+                        <td>61-3333 7070</td>
+                    </tr>
+                    <tr>
+                        <td>REINALDO DA SILVA</td>
+                        <td>QNL 01 BLOCO F</td>
+                        <td>jose@gmail.com</td>
+                        <td>61-3333 7070</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="text-end">
+                <button type="button" class="btn btn-info">Salvar</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
