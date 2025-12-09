@@ -1,4 +1,3 @@
-# DI
 # 🎨 DI – Desenvolvimento de Interfaces
 
 Repositório das atividades da disciplina de **Desenvolvimento de Interfaces (DI)** — incluindo HTML, CSS, Bootstrap, JavaScript e fundamentos de UX/UI e IHC.
