@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 20 CSS</title>
+</head>
+
+<body>
+    <div>
+        <h1>Exemplo 20 HTML CSS - Vinculação Interna</h1>
+        <h2>Inline</h2>
+        <p>A vinculação de arquivos CSS de forma interna pode ser realizada de várias formas diferentes. Uma delas é a
+            vinculação inline, que é aquela onde a regra CSS é aplicada diretamente a um elemento HTML, usando o
+            atributo style.</p>
+        <h2>Exemplo de Vinculação Interna</h2>
+        <p style="color: blue; font-weight: 900; text-align: center; text-transform: uppercase;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quos dicta veritatis provident, earum autem
+            explicabo. Laborum, quia. Temporibus, explicabo. Non ex eum ea dolores? Provident, debitis quis. Totam,
+            quidem.
+        </p>
+    </div>
+</body>
+
+</html>
