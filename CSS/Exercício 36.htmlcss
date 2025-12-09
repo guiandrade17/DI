@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 36 - Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                "header header"
+                "main aside"
+                "footer footer"
+            ;
+            grid-template-columns: 80% 1fr;
+            grid-template-rows: 20% 1fr 10%;
+            height: 100vh;
+        }
+
+        header,
+        main,
+        aside,
+        footer {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 5rem;
+        }
+
+        header {
+            background-color: deeppink;
+            grid-area: footer;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            background-color: darkorange;
+            grid-area: aside;
+            display: flex;
+            justify-content: center;
+        }
+
+        aside {
+            background-color: lightskyblue;
+            grid-area: main;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: lightgreen;
+            grid-area: header;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            1
+        </header>
+        <main>
+            2
+        </main>
+        <aside>
+            3
+        </aside>
+        <footer>
+            4
+        </footer>
+    </div>
+</body>
+
+</html>
