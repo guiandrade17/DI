@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Exemplo 53 - JavaScript</title>
+</head>
+<body>
+<div class="container-sm">
+    <div class="alert alert-primary" role="alert">
+        <h2>Uso do métodos(Push, Pop, Sort, LastIndexOf e IndexOf)</h2>
+        <script>
+            var vetor1=[];
+            vetor1.push("José");
+            vetor1.push("Maria");
+            vetor1.push("João");
+            vetor1.push("Pedro");
+            vetor1.push("Lara");
+            vetor1.push("Reinaldo");
+            vetor1.push("Bruno");
+            vetor1.push("Liris");
+            vetor1.push("Taina");
+            vetor1.push("Thiago");
+            document.write(vetor1);
+            document.write("<br>");
+            document.write("<h5>Usando o método pop para tirar ou retirar o último elemento da lista. Neste exemplo aplicamos o pop 3 vezes </h5>");
+            vetor1.pop();
+            vetor1.pop();
+            vetor1.pop();
+            document.write(vetor1);
+            document.write("<br>");
+            document.write("<h5>Usando o método indexOf para descobrir um elemento a partir do seu índice.</h5>")
+            var indice = vetor1.indexOf("João");
+            document.writeln("O índice do elemento João é "+ indice);
+            document.write("<br>");
+            document.write("<br>");
+            vetor1.push("Lara");
+            vetor1.push("Rafael");
+            vetor1.push("Lara");
+            document.write(vetor1);
+            document.write("<br>");
+            var ultimoIndice = vetor1.lastIndexOf("Lara");
+            document.writeln("O último índice do elemento Lara é "+ ultimoIndice);
+            document.write("<br>");
+            document.write("<h5>Usando o método Sort para ordenar o vetor </h5>");
+            document.write(vetor1.sort());
+        </script>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
